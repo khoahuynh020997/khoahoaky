@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khoa Hoa Kỳ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khoa Hoa Kỳ</title>
 
-    <link rel="stylesheet" href="style.css">
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#e8f5e9;
+}
+
+.hero{
+    height:320px;
+    background:url("banner.jpg") center center/cover no-repeat;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.35);
+}
+
+.hero div{
+    position:relative;
+    z-index:2;
+}
+
+.card{
+    max-width:480px;
+    margin:-60px auto 30px;
+    background:#fff;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.avatar{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    margin:-90px auto 15px;
+    display:block;
+    object-fit:cover;
+    border:5px solid #fff;
+}
+
+h1{
+    margin:10px 0 5px;
+    text-align:center;
+}
+
+p{
+    color:#555;
+    text-align:center;
+}
+
+a.btn{
+    display:block;
+    text-decoration:none;
+    background:#2e7d32;
+    color:#fff;
+    padding:14px;
+    margin:12px 0;
+    border-radius:14px;
+    text-align:center;
+    font-weight:bold;
+    transition:.25s;
+}
+
+a.btn:hover{
+    background:#1b5e20;
+    transform:translateY(-2px);
+}
+</style>
+
 </head>
 
 <body>
@@ -18,6 +95,7 @@
 </div>
 
 <div class="card">
+
     <img class="avatar" src="avatar.jpg" alt="Avatar">
 
     <h1>Khoa Hoa Kỳ</h1>
@@ -25,13 +103,16 @@
     <p>Chia sẻ kỹ thuật • Tăng năng suất • Giảm chi phí</p>
 
     <a class="btn" href="https://youtube.com/@khoahoaky?si=D2uqHz48U4fzUlrD">▶ YouTube</a>
-    <a class="btn" href="https://www.tiktok.com/@khoahoaky">🎵 TikTok</a>
-    <a class="btn" href="https://www.facebook.com/khoahoaky">📘 Facebook</a>
-    <a class="btn" href="https://zalo.me/0845325488">💬 Zalo</a>
-    <a class="btn" href="tel:0845325488">☎ Gọi ngay: 0845325488</a>
-</div>
 
-<script src="script.js"></script>
+    <a class="btn" href="https://www.tiktok.com/@khoahoaky">🎵 TikTok</a>
+
+    <a class="btn" href="https://www.facebook.com/khoahoaky">📘 Facebook</a>
+
+    <a class="btn" href="https://zalo.me/0845325488">💬 Zalo</a>
+
+    <a class="btn" href="tel:0845325488">☎ Gọi ngay: 0845325488</a>
+
+</div>
 
 </body>
 </html>
