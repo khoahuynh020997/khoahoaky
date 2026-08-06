@@ -13,7 +13,7 @@ body{
 }
 
 .hero{
-    height:320px;
+    height:360px; /* Tăng nhẹ chiều cao để banner thoáng hơn */
     background:url("banner.jpg") center center/cover no-repeat;
     position:relative;
     display:flex;
@@ -27,13 +27,15 @@ body{
 
 .card{
     max-width:480px;
-    margin:-80px auto 30px;
+    width:92%; /* Giúp card không bị sát viền màn hình điện thoại nhỏ */
+    margin:-70px auto 30px;
     background:#fff;
     border-radius:20px;
     padding:90px 20px 20px;
     box-shadow:0 10px 30px rgba(0,0,0,.15);
     position:relative;
     z-index:2;
+    box-sizing: border-box;
 }
 
 .avatar{
@@ -49,9 +51,23 @@ body{
     box-shadow:0 10px 25px rgba(0,0,0,.25);
     z-index:999;
 }
-h1{
-    margin:10px 0 5px;
-    text-align:center;
+
+/* ĐÃ CẬP NHẬT: Định dạng lại thẻ tiêu đề và dấu tích cho cân đối */
+.title-verified {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 5px;
+    font-size: 24px;
+}
+
+/* ĐÃ CẬP NHẬT: Tăng kích thước dấu tích và căn chỉnh thẳng hàng tuyệt đối */
+.title-verified::after {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="%232e7d32"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.99 14.59-4.24-4.24 1.41-1.41 2.83 2.83 7.07-7.07 1.41 1.41-8.48 8.48z"/></svg>');
+    margin-left: 8px;
+    display: inline-flex;
+    align-items: center;
+    transform: translateY(2px);
 }
 
 p{
@@ -63,7 +79,7 @@ a.btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Tạo khoảng cách giữa icon và chữ */
+    gap: 10px;
     text-decoration: none;
     background: #2e7d32;
     color: #fff;
@@ -72,12 +88,12 @@ a.btn {
     border-radius: 14px;
     font-weight: bold;
     transition: all 0.25s ease;
-    box-shadow: 0 4px 10px rgba(46, 125, 50, 0.2); /* Tạo bóng nhẹ cho nút */
+    box-shadow: 0 4px 10px rgba(46, 125, 50, 0.2);
 }
 
 a.btn:active {
     background: #1b5e20;
-    transform: translateY(-5px); /* Nhấn vào sẽ dịch chuyển lên rõ rệt hơn */
+    transform: scale(0.97); /* Hiệu ứng lún nhẹ khi chạm vào trên điện thoại */
     box-shadow: 0 2px 5px rgba(46, 125, 50, 0.3);
 }
 
@@ -93,15 +109,10 @@ a.btn:active {
 
     <img class="avatar" src="avatar.jpg" alt="Avatar">
 
-    <h1>
-    Khoa Hoa Kỳ 
-    <span class="verified-badge" title="Đã xác thực">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="#2e7d32" style="vertical-align: middle; margin-left: 4px;">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.99 14.59-4.24-4.24 1.41-1.41 2.83 2.83 7.07-7.07 1.41 1.41-8.48 8.48z"/>
-        </svg>
-    </span>
-</h1>
-
+    <!-- ĐÃ CẬP NHẬT: Thêm class "title-verified" vào đây -->
+    <h1 class="title-verified">
+        Khoa Hoa Kỳ 
+    </h1>
 
     <p>Chia sẻ kỹ thuật • Tăng năng suất • Giảm chi phí</p>
 
