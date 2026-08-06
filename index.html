@@ -59,23 +59,27 @@ p{
     text-align:center;
 }
 
-a.btn{
-    display:block;
-    text-decoration:none;
-    background:#2e7d32;
-    color:#fff;
-    padding:14px;
-    margin:12px 0;
-    border-radius:14px;
-    text-align:center;
-    font-weight:bold;
-    transition:.25s;
+a.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Tạo khoảng cách giữa icon và chữ */
+    text-decoration: none;
+    background: #2e7d32;
+    color: #fff;
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 14px;
+    font-weight: bold;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 10px rgba(46, 125, 50, 0.2); /* Tạo bóng nhẹ cho nút */
 }
 
 a.btn:hover{
     background:#1b5e20;
     transform:translateY(-2px);
 }
+
 </style>
 
 </head>
