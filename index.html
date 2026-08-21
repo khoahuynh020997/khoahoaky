@@ -96,7 +96,26 @@ a.btn:active {
     transform: scale(0.97); /* Hiệu ứng lún nhẹ khi chạm vào trên điện thoại */
     box-shadow: 0 2px 5px rgba(46, 125, 50, 0.3);
 }
+/* ===== TIÊU ĐỀ ỨNG DỤNG ===== */
+.section-title {
+    text-align: center;
+    margin: 28px 0 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #2e7d32;
+    letter-spacing: 0.5px;
+}
 
+.section-title::before,
+.section-title::after {
+    content: "";
+    display: inline-block;
+    width: 36px;
+    height: 1px;
+    background: #a5d6a7;
+    vertical-align: middle;
+    margin: 0 10px;
+}
 </style>
 
 </head>
@@ -125,7 +144,11 @@ a.btn:active {
     <a class="btn" href="https://zalo.me/0845325488">💬 Zalo</a>
 
     <a class="btn" href="tel:0845325488">☎ Gọi ngay: 0845325488</a>
+    <!-- ===== ỨNG DỤNG CỦA TÔI ===== -->
+    <div class="section-title">Ứng dụng của tôi</div>
 
+    <a class="btn" href="https://khoahuynh020997.github.io/canluapro/">🌾 Cân Lúa Pro</a>
+    <a class="btn" href="https://khoahuynh020997.github.io/khoahoaky-npk/">🧪 Tính Phân NPK</a>
 </div>
 
 </body>
