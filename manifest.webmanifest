@@ -1,0 +1,20 @@
+{
+  "name": "Khoa Hoa Kỳ",
+  "short_name": "Khoa Hoa Kỳ",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0c2414",
+  "theme_color": "#1b6b32",
+  "icons": [
+    {
+      "src": "khoa-192.PNG",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "khoa-512.PNG",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
